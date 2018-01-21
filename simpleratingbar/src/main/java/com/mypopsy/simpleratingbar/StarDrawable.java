@@ -21,6 +21,7 @@ class StarDrawable extends Drawable {
     private static final boolean DEBUG = false;
 
     static final int DEFAULT_FILL_COLOR = 0xFFFFD203;
+    public static final int DEFAULT_SIZE = 100;
 
     private final Rect mTmpRect = new Rect();
     private final Rect mStarBounds = new Rect();
@@ -36,7 +37,7 @@ class StarDrawable extends Drawable {
     private int mBorderColor;
     private float mCornerRadius;
     private int mGravity = Gravity.CENTER;
-    private int mSize;
+    private int mSize = DEFAULT_SIZE;
 
     StarDrawable() {
 

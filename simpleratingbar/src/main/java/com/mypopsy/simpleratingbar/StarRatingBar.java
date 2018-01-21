@@ -203,9 +203,8 @@ public class StarRatingBar extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-
-        mFilled.setSize(Math.round(mStarSize));
-        mOutline.setSize(Math.round(mStarSize));
+        mFilled.setSize(Math.round(StarDrawable.DEFAULT_SIZE));
+        mOutline.setSize(Math.round(StarDrawable.DEFAULT_SIZE));
 
         Gravity.apply(mGravity,
                 Math.round(mNumStars*mStarSize + mStarPadding*(mNumStars - 1)),
